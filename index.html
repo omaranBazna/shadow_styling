@@ -95,6 +95,16 @@ select:active, select:hover {
 const btn=document.getElementById("btn")
 const text=document.getElementById("text")
 
+
+let posX=5;
+let posY=5;
+let blur=0;
+let color="blue"
+
+let shadow=`${posX}px ${posY}px ${blur}px ${color}`;
+btn.style.boxShadow = shadow;
+text.innerHTML=`shadow-box: ${shadow}`
+
     </script>
 </body>
 </html>
