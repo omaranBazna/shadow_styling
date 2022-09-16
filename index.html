@@ -1,12 +1,40 @@
 <html>
 <head>
 <style>
-    
+
 </style>
 </head>
 <body>
 
+<form>
+  <select name="color" id="select-color" onchange="setColor()">
+    <option  value="red" >red </option>
+     <option  value="blue">blue</option>
+       <option  value="green">green</option>
+       <option  value="yellow">yellow</option>
+       <option  value="grey">grey</option>
+    
+    <div class="slidecontainer">
+  <input type="range" min="0" max="100" value="50" class="slider" id="myRange1" onchange="changePosX()">
+      
+        <input type="range" min="0" max="100" value="50" class="slider" id="myRange2" onchange="changePosY()">
+      
+            <input type="range" min="0" max="100" value="50" class="slider" id="myRange3" onchange="changeBlur()">
+      
+          <input type="radio" />
+      
+</div>
+  </select>
+  
+</form>
 
+<button id="btn">
+  Shadow
+</button>
+
+<div id="text">
+  
+</div>
 
     <script>
 
