@@ -132,6 +132,15 @@ shadow=`${posX}px ${posY}px ${blur}px ${color}`;
   btn.style.boxShadow = shadow;
 text.innerHTML=`shadow-box: ${shadow}`
 }
+
+function changeBlur(){
+    let el=document.getElementById("myRange3");
+  blur=el.value;
+  
+shadow=`${posX}px ${posY}px ${blur}px ${color}`;
+  btn.style.boxShadow = shadow;
+text.innerHTML=`shadow-box: ${shadow}`
+}
     </script>
 </body>
 </html>
