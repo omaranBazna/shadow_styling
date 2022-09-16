@@ -113,6 +113,16 @@ shadow=`${posX}px ${posY}px ${blur}px ${color}`;
   btn.style.boxShadow = shadow;
 text.innerHTML=`shadow-box: ${shadow}`
 }
+
+
+function changePosX(){
+    let el=document.getElementById("myRange1");
+   posX=el.value;
+  
+shadow=`${posX}px ${posY}px ${blur}px ${color}`;
+  btn.style.boxShadow = shadow;
+text.innerHTML=`shadow-box: ${shadow}`
+}
     </script>
 </body>
 </html>
