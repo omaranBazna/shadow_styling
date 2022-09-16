@@ -105,6 +105,14 @@ let shadow=`${posX}px ${posY}px ${blur}px ${color}`;
 btn.style.boxShadow = shadow;
 text.innerHTML=`shadow-box: ${shadow}`
 
+function setColor(){
+  let el=document.getElementById("select-color");
+   color=el.value;
+  
+shadow=`${posX}px ${posY}px ${blur}px ${color}`;
+  btn.style.boxShadow = shadow;
+text.innerHTML=`shadow-box: ${shadow}`
+}
     </script>
 </body>
 </html>
